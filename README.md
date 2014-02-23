@@ -49,6 +49,7 @@ I just want to know who is the BEST. (Russia is BEST!!)
 
 Ahh google is a)blocking me, or 2) Not postingresults, 3) Changed their format, lets use the local results.json 
 
+    $ python bin/get_medal_count_from_google.py --source FromFile
     Instantiating FromFile
     Russia               - 33  : 13 Gold, 11 Silver, 9  Bronze
     United States        - 28  : 9  Gold, 7  Silver, 12 Bronze
@@ -58,12 +59,12 @@ Ahh google is a)blocking me, or 2) Not postingresults, 3) Changed their format, 
 
 # Dependancies:
 
--Python 2. Lets say 2.7
--Python lxml library - I had trouble installing with pip as it has C dependancies. I had success on ubuntu just installing the deb via 'sudo apt-get install python-lxml'
--Internets. Specifically a cooperative Google.
+- Python 2. Lets say 2.7
+- Python lxml library - I had trouble installing with pip as it has C dependancies. I had success on ubuntu just installing the deb via 'sudo apt-get install python-lxml'
+- Internets. Specifically a cooperative Google.
 
 # Bugs
 
 - None of the tie breaks are implemented 
-    - (for oredered=gold and #gold == #gold, , use #silver then #bronze) 
-    - (for ordered=total and #total == #total, use #gold then #silver then #bronze)
+    - (ordered=gold and #gold == #gold, use #silver then #bronze) 
+    - (ordered=total and #total == #total, use #gold then #silver then #bronze)
